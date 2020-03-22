@@ -1,15 +1,19 @@
 package ro.acs.csie.cts.g1084.tema2;
 
-public class User {
-    private String username;
+public class User implements Watchable{
+    public String username;
     private String password;
-    private int nrFilmeVazute;
+    public int moviesWatchedNo;
 
-    public User(String username, String password, int nrFilmeVazute) {
+    public User(String username, String password, int moviesWatchedNo) {
         super();
         this.username = username;
         this.password = password;
-        this.nrFilmeVazute = nrFilmeVazute;
+        this.moviesWatchedNo = moviesWatchedNo;
     }
-    
+
+    @Override
+    public void addWatchedMovies(int moviesNumber) {
+        this.moviesWatchedNo += moviesNumber;
+    }
 }
