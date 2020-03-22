@@ -7,5 +7,5 @@ public class TestGit {
     public void main() {
         System.out.println("Hello Git ! Denumirea proiectului de licență este " + TITLU_LICENTA);
     }
-    
+
 }
